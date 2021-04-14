@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE7E2"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tablero"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inc2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="+"
+        android:theme="@style/Button.Colored"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scoreB3_imageView"
+        app:layout_constraintStart_toStartOf="@+id/scoreB3_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/scoreB3_imageView" />
+
+    <TextView
+        android:id="@+id/team2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Equipo2"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/title_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Equipo1"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/title_label"
+        app:layout_constraintEnd_toStartOf="@+id/title_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/scoreA1_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/scoreA2_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_label"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <ImageView
+        android:id="@+id/scoreA3_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreB3_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/scoreA2_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/scoreA1_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/scoreA1_imageView"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <ImageView
+        android:id="@+id/scoreA2_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreA1_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/title_label"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scoreA1_imageView"
+        app:layout_constraintTop_toTopOf="@+id/scoreA1_imageView"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <Button
+        android:id="@+id/inc1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="+"
+        android:theme="@style/Button.Colored"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scoreA3_imageView"
+        app:layout_constraintStart_toStartOf="@+id/scoreA3_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/scoreA3_imageView" />
+
+    <ImageView
+        android:id="@+id/scoreB1_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreB2_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/scoreB2_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/title_label"
+        app:layout_constraintTop_toTopOf="@+id/scoreB2_imageView"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <ImageView
+        android:id="@+id/scoreB2_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scoreB1_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/title_label"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <ImageView
+        android:id="@+id/scoreB3_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/scoreB2_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/scoreB1_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/scoreB1_imageView"
+        app:srcCompat="@drawable/ic_tantos_vacio" />
+
+    <Button
+        android:id="@+id/decA_button_1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc1_button"
+        app:layout_constraintEnd_toStartOf="@+id/inc1_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inc1_button" />
+
+    <Button
+        android:id="@+id/decB_button_1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inc2_button"
+        app:layout_constraintTop_toTopOf="@+id/inc2_button" />
+
+    <Button
+        android:id="@+id/decB_button_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inc2_button"
+        app:layout_constraintTop_toTopOf="@+id/inc2_button" />
+
+    <Button
+        android:id="@+id/decB_button_3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inc2_button"
+        app:layout_constraintTop_toTopOf="@+id/inc2_button" />
+
+    <Button
+        android:id="@+id/decA_button_2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc1_button"
+        app:layout_constraintEnd_toStartOf="@+id/inc1_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inc1_button" />
+
+    <Button
+        android:id="@+id/decA_button_3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:width="30dp"
+        android:text="-"
+        android:theme="@style/Button.ColoredLight"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/inc1_button"
+        app:layout_constraintEnd_toStartOf="@+id/inc1_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inc1_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton_shareResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_share"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_finalResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_shareResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

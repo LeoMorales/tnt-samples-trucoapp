@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tablero</string>
+    <string name="panel_title">Tablero</string>
+    <string name="team1_label">Equipo1</string>
+    <string name="inc_button1_text">+</string>
+    <string name="etiqueta_titulo">Puntaje</string>
+    <string name="puntuacion_texto">0</string>
+    <string name="texto_boton">+</string>
+</resources>
